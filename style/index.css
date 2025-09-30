@@ -143,3 +143,28 @@ ul.social li a i {
   justify-content: center;
   align-items: center;
 }
+
+
+/* Parteners */
+
+.parteners{
+  width: 85%;
+  margin: auto;
+  padding: 0 70px;
+}
+.parteners p{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.parteners .logos{
+  gap: 15px;
+}
+
+.parteners .logos a{
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  /* border: 1px solid #1b1b1b90; */
+  border-radius: 15px;
+}

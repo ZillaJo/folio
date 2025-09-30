@@ -25,6 +25,14 @@ img {
   object-fit: cover;
 }
 
+p {
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #9c9c9c;
+  /* padding-bottom: 50px; */
+}
+
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -191,7 +199,7 @@ ul.social li a i {
 
 /* case studies section */
 
-.section2 {
+.case-section {
   padding: 0 150px;
   background-color: white;
 }
@@ -202,11 +210,10 @@ ul.social li a i {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 .case-studie-head p {
-  font-family: "IBM Plex Mono", monospace;
   font-size: 15px;
   line-height: 1.6;
   margin-top: 10px;
@@ -277,14 +284,6 @@ ul.social li a i {
   padding-bottom: 15px;
 }
 
-.case-container p {
-  font-family: "IBM Plex Mono", monospace;
-  line-height: 1.6;
-  font-size: 15px;
-  color: #9c9c9c;
-  padding-bottom: 50px;
-}
-
 .fintech-btn {
   background-color: #ffa217;
 }
@@ -295,4 +294,61 @@ ul.social li a i {
 
 .pharma-btn {
   background-color: #2ab090;
+}
+
+/* Testimonials */
+
+.testimonial-section {
+  padding: 0 150px;
+}
+.testimonial-head {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 150px;
+  text-align: center;
+  color: #9c9c9c;
+  padding-bottom: 60px;
+}
+
+.testimonials-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.testimonials-cards .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+  border: 1px solid;
+  /* border-radius: 10px; */
+  border-image: linear-gradient(to right, #9C9C9C, rgba(255, 255, 255, 0)) 1; 
+  gap: 20px;
+}
+
+.bordered-card{
+  border-radius: 50%;
+}
+
+.testimonials-cards .card i {
+  position: absolute;
+  top: -20px;
+  left: 10%;
+  transform: translateX(-50%);
+  font-size: 40px;
+}
+
+.testy-clients {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.testy-clients .profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
 }

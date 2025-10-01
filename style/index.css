@@ -394,3 +394,43 @@ ul.social li a i {
 .recent-btn {
   background: #62ba1b;
 }
+
+
+/* In touch section */
+
+.intouch-section {
+  padding: 50px 150px;
+}
+
+.intouch-head {
+  text-align: center;
+  margin: 0 150px;
+  padding-bottom: 40px;
+}
+
+.intouch-content {
+  display: flex;
+}
+
+.intouch-content form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  gap: 10px;
+}
+
+.intouch-content input,
+textarea {
+  border-radius: 8px;
+  padding: 10px;
+}
+.intouch-content textarea {
+  resize: none;
+  height: 200px;
+}
+.intouch-btn {
+  padding: 15px;
+  text-align: center;
+  background: #62ba1b;
+}

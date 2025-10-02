@@ -567,7 +567,7 @@ footer {
     order: 1;
     border-radius: 50%;
   }
-  
+
   .case-container p,
   footer {
     padding-bottom: 20px;
@@ -576,5 +576,74 @@ footer {
   /* intouch container */
   .intouch-content form {
     width: 95%;
+  }
+}
+
+/* tablet responsiveness */
+
+@media (min-width: 451px) and (max-width: 1024px) {
+  .hero,
+  .case-section,
+  .testimonial-section,
+  .recent-section,
+  .intouch-section,
+  footer {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+    height: auto;
+    gap: 30px;
+  }
+  header {
+    padding-top: 70px;
+  }
+  .nav-bar {
+    height: 30px;
+    width: 95%;
+  }
+  .nav-bar .menu li a {
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    height: auto;
+    /* padding-top: 40px; */
+    gap: 20px;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 40px;
+  }
+  .hero .hero-left p {
+    font-size: 15px;
+  }
+  .hero .hero-left a {
+    width: auto;
+    height: 20px;
+  }
+  .parteners p {
+    font-size: 15px;
+  }
+  .parteners .logos a {
+    height: 30px;
+  }
+
+  .cases .case-studies-container img {
+    height: 300px;
+    width: 100%;
+  }
+  .case-container p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .testimonial-section{
+    padding-bottom: 20px;
+  }
+  .recent-head{
+    padding-top: 50px;
+  }
+  .recent-container{
+    padding-bottom: 20px;
   }
 }

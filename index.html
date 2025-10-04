@@ -12,6 +12,15 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <!-- Boxicons icons -->
     <script
       src="https://kit.fontawesome.com/4f0432affe.js"
       crossorigin="anonymous"
@@ -20,15 +29,17 @@
   <body>
     <main class="main">
       <header>
+        <!-- <i class="bxr bx-menu" id=""></i> -->
+        <!-- Mobile menu icon -->
         <!-- navigation bar -->
         <nav class="nav-bar flex-row">
           <!-- menu -->
           <ul class="flex-row menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/index.html">Case Studies</a></li>
-            <li><a href="/index.html">Testimonials</a></li>
-            <li><a href="/index.html">Recent work</a></li>
-            <li><a href="/index.html">Get In Touch</a></li>
+            <li><a href="#home" style="--i: 1" class="active">Home</a></li>
+            <li><a href="#cases" style="--i: 2">Case Studies</a></li>
+            <li><a href="#testimony" style="--i: 3">Testimonials</a></li>
+            <li><a href="#recent" style="--i: 4">Recent Work</a></li>
+            <li><a href="#contact" style="--i: 5">Get In Touch</a></li>
           </ul>
 
           <!-- social icons -->
@@ -56,6 +67,8 @@
           <!-- left hero section-->
           <div class="hero-left">
             <h1>Zilla Jo</h1>
+            <!-- Span used by Typed.js for dynamic text -->
+            <h3>And I'm a <span class="typing"></span></h3>
             <p>
               Intro text: Lorem ipsum dolor sit amet, consectetur adipiscing
               elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -92,7 +105,7 @@
         <!-- case studies -->
 
         <div class="case-studie-head">
-          <h2 class="black-title">Case Studies</h2>
+          <h2 class="black-title heading">Case Studies</h2>
           <p>
             Solving user & business problems since last 15+ years.Lorem ipsum
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -103,7 +116,7 @@
           <div class="case-studies-container">
             <div class="case-container">
               <a class="fintech badge">Fintech</a>
-              <h3>Work name Here</h3>
+              <h3 class="heading">Work name Here</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. sed
@@ -124,7 +137,7 @@
           <div class="case-studies-container">
             <div class="case-container">
               <a class="edtch badge">EdTech</a>
-              <h3>Work name Here</h3>
+              <h3 class="heading">Work name Here</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. sed
@@ -145,7 +158,7 @@
           <div class="case-studies-container">
             <div class="case-container">
               <a class="pharma badge">Pharma</a>
-              <h3>Work name Here</h3>
+              <h3 class="heading">Work name Here</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. sed
@@ -168,7 +181,7 @@
       <!-- Testimonials -->
       <section class="testimonial-section">
         <div class="testimonial-head">
-          <h2 class="white-title">Testimonials</h2>
+          <h2 class="white-title heading">Testimonials</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -185,7 +198,7 @@
               <div class="profile">
                 <img src="assets/images/image6.png" />
               </div>
-              <h3>Client Name</h3>
+              <h3 class="heading">Client Name</h3>
             </div>
           </div>
           <div class="card">
@@ -198,7 +211,7 @@
               <div class="profile">
                 <img src="assets/images/image5.png" />
               </div>
-              <h3>Client Name</h3>
+              <h3 class="heading">Client Name</h3>
             </div>
           </div>
           <div class="card">
@@ -211,7 +224,7 @@
               <div class="profile">
                 <img src="assets/images/image6.png" />
               </div>
-              <h3>Client Name</h3>
+              <h3 class="heading">Client Name</h3>
             </div>
           </div>
           <div class="card">
@@ -224,7 +237,7 @@
               <div class="profile">
                 <img src="assets/images/image5.png" />
               </div>
-              <h3>Client Name</h3>
+              <h3 class="heading">Client Name</h3>
             </div>
           </div>
         </div>
@@ -232,7 +245,7 @@
       <!-- Recent work section -->
       <section class="recent-section">
         <div class="recent-head">
-          <h2 class="black-title">Recent Work</h2>
+          <h2 class="black-title heading">Recent Work</h2>
           <p>
             Solving user & business problems since last 15+ years.Lorem ipsum
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -244,7 +257,7 @@
             <div class="work-profile">
               <img src="assets/images/image9.png" />
             </div>
-            <h3>Work Name Here</h3>
+            <h3 class="heading">Work Name Here</h3>
             <p>
               Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
               labore et dolore magna.
@@ -259,7 +272,7 @@
             <div class="work-profile">
               <img src="assets/images/image8.png" />
             </div>
-            <h3>Work Name Here</h3>
+            <h3 class="heading">Work Name Here</h3>
             <p>
               Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
               labore et dolore magna.
@@ -275,7 +288,7 @@
       <!-- Get in touch Section -->
       <section class="intouch-section">
         <div class="intouch-head">
-          <h2>Get In Touch</h2>
+          <h2 class="heading">Get In Touch</h2>
           <p>
             Solving user & business problems since last 15+ years.Lorem ipsum
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -302,9 +315,15 @@
           </form>
         </div>
       </section>
-      <footer >
+      <footer>
         <div class="footer-container">© 2025 MySite Doing by Phenix Dev.</div>
       </footer>
+      <!-- Scripts for Typed.js (animated text) and custom script -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <!--scroll reveal-->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- Custom script file -->
+      <script src="script/script.js"></script>
     </main>
   </body>
 </html>

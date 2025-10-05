@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body{
+  overflow-x: hidden;
+}
 
 body {
   background-color: #000;
@@ -74,13 +77,15 @@ header {
 
 /* navigation */
 
-nav {
+nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
   left: 50%;
   top: 0;
   font-size: 1.8rem;
   transform: translateX(-50%);
-  width: 85%;
+  width: 95%;
   background-color: #1b1b1b;
   margin: auto;
   padding: 28px 95px;
@@ -96,33 +101,37 @@ nav {
 /* Hover and active link effect */
 .nav-bar .menu a:hover,
 .nav-bar .menu a.active {
-  color: #0a7a06; /* Light blue */
+  color: #0a7a06;
 }
 
-ul {
+ ul {
   list-style: none;
 }
+ ul li {
+  margin: 5px 0;
+}
 
-.menu {
+.nav-links .menu {
   flex: 1;
 }
 
-.menu li a {
+.nav-links .menu li a,
+i {
   text-decoration: none;
   font-size: 20px;
   color: #9c9c9c;
 }
 
-ul.social li a i:hover {
+.nav-links .social li a i:hover {
   color: #0a7a06;
   transition: color 0.5s;
 }
 
-.social {
+.nav-links .social {
   gap: 25px;
 }
 
-ul.social li a i {
+.nav-links .social li a i {
   color: #ffffff30;
   font-size: 30px;
 }
@@ -461,9 +470,14 @@ footer {
   color: #9c9c9c;
 }
 
+
+
 /* Responsiveness section */
 
 @media (min-width: 970px) {
+  .nav-bar .bxr {
+    display: none;
+  }
   .hero,
   .case-section,
   .testimonial-section,
@@ -482,7 +496,7 @@ footer {
     height: 30px;
     width: 95%;
   }
-  .nav-bar .menu li a {
+  .nav-bar .nav-links .menu li a {
     font-size: 14px;
     justify-content: space-between;
   }
@@ -533,9 +547,40 @@ footer {
 }
 
 @media (min-width: 922px) and (max-width: 969px) {
-  .nav-bar{
-    display: none;
+ /* Bouton menu hamburger */
+.nav-bar .menu-hamburger,
+#menu-icon {
+  position: absolute;
+  top: 20px;     /* distance du haut */
+  right: 30px;   /* distance du bord droit */
+  font-size: 2.5rem; /* taille de l’icône */
+  cursor: pointer;
+  display: block; /* visible en mobile */
+  z-index: 999;  /* toujours au-dessus */
+}
+  nav .nav-links {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #1b1b1bae;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 1;
   }
+  .nav-bar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links.active,
+  .mobile-menu {
+    transform: translateX(0);
+  }
+
   .hero,
   .case-section,
   .testimonial-section,
@@ -605,9 +650,40 @@ footer {
 }
 
 @media (min-width: 811px) and (max-width: 921px) {
-  .nav-bar {
-    display: none;
+ /* Bouton menu hamburger */
+.nav-bar .menu-hamburger,
+#menu-icon {
+  position: absolute;
+  top: 20px;     /* distance du haut */
+  right: 30px;   /* distance du bord droit */
+  font-size: 2.5rem; /* taille de l’icône */
+  cursor: pointer;
+  display: block; /* visible en mobile */
+  z-index: 999;  /* toujours au-dessus */
+}
+  nav .nav-links {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #1b1b1bae;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 1;
   }
+  .nav-bar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links.active,
+  .mobile-menu {
+    transform: translateX(0);
+  }
+
   .hero,
   .case-section,
   .testimonial-section,
@@ -680,11 +756,39 @@ footer {
 }
 
 @media (min-width: 701px) and (max-width: 810px) {
-  /* --- Navbar --- */
-  .nav-bar {
-    display: none;
+    /* Bouton menu hamburger */
+.nav-bar .menu-hamburger,
+#menu-icon {
+  position: absolute;
+  top: 20px;     /* distance du haut */
+  right: 30px;   /* distance du bord droit */
+  font-size: 2.5rem; /* taille de l’icône */
+  cursor: pointer;
+  display: block; /* visible en mobile */
+  z-index: 999;  /* toujours au-dessus */
+}
+  nav .nav-links {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #1b1b1bae;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-bar .nav-links ul {
+    display: flex;
+    flex-direction: column;
   }
 
+  .nav-links.active,
+  .mobile-menu {
+    transform: translateX(0);
+  }
   /* --- Global layout --- */
   .hero,
   .case-section,
@@ -703,10 +807,9 @@ footer {
   /* --- HERO SECTION --- */
   .hero {
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    padding: 5px;
     height: auto;
-    /* padding-top: 40px; */
-    gap: 20px;
+    gap: 5px;
   }
   .hero img {
     width: 250px;
@@ -747,7 +850,7 @@ footer {
   }
 
   .track {
-    width: 800px;
+    width: 100%;
     display: flex;
     /* animation */
     animation: slide 12s linear infinite;
@@ -807,8 +910,38 @@ footer {
 }
 
 @media screen and (min-width: 451px) and (max-width: 700px) {
-  .nav-bar {
-    display: none;
+  /* Bouton menu hamburger */
+.nav-bar .menu-hamburger,
+#menu-icon {
+  position: absolute;
+  top: 20px;     /* distance du haut */
+  right: 30px;   /* distance du bord droit */
+  font-size: 2.5rem; /* taille de l’icône */
+  cursor: pointer;
+  display: block; /* visible en mobile */
+  z-index: 999;  /* toujours au-dessus */
+}
+  nav .nav-links {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #1b1b1bae;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-bar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links.active,
+  .mobile-menu {
+    transform: translateX(0);
   }
 
   .hero,
@@ -934,8 +1067,38 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
-  .nav-bar {
-    display: none;
+  /* Bouton menu hamburger */
+.nav-bar .menu-hamburger,
+#menu-icon {
+  position: absolute;
+  top: 20px;     /* distance du haut */
+  right: 30px;   /* distance du bord droit */
+  font-size: 2.5rem; /* taille de l’icône */
+  cursor: pointer;
+  display: block; /* visible en mobile */
+  z-index: 999;  /* toujours au-dessus */
+}
+  nav .nav-links {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #1b1b1bae;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-bar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links.active,
+  .mobile-menu {
+    transform: translateX(0);
   }
 
   .hero,

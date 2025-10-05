@@ -29,37 +29,39 @@
   <body>
     <main class="main">
       <header>
-        <!-- <i class="bxr bx-menu" id=""></i> -->
-        <!-- Mobile menu icon -->
         <!-- navigation bar -->
-        <nav class="nav-bar flex-row">
+        <nav class="nav-bar">
           <!-- menu -->
-          <ul class="flex-row menu">
-            <li><a href="#home" style="--i: 1" class="active">Home</a></li>
-            <li><a href="#cases" style="--i: 2">Case Studies</a></li>
-            <li><a href="#testimony" style="--i: 3">Testimonials</a></li>
-            <li><a href="#recent" style="--i: 4">Recent Work</a></li>
-            <li><a href="#contact" style="--i: 5">Get In Touch</a></li>
-          </ul>
+          <div class="nav-links flex-row" id="nav-links">
+            <ul class="flex-row menu">
+              <li><a href="#home" style="--i: 1" class="active">Home</a></li>
+              <li><a href="#cases" style="--i: 2">Case Studies</a></li>
+              <li><a href="#testimony" style="--i: 3">Testimonials</a></li>
+              <li><a href="#recent" style="--i: 4">Recent Work</a></li>
+              <li><a href="#contact" style="--i: 5">Get In Touch</a></li>
+            </ul>
 
-          <!-- social icons -->
-          <ul class="flex-row social">
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-behance"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
+            <!-- social icons -->
+            <ul class="flex-row social">
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Mobile menu icon -->
+          <i class="bxr bx-menu menu-hamburger" id="menu-icon"></i>
         </nav>
 
         <!-- hero section -->
@@ -101,7 +103,7 @@
       </header>
 
       <!-- Cases Section -->
-      <section class="case-section">
+      <section class="case-section" id="cases">
         <!-- case studies -->
 
         <div class="case-studie-head">
@@ -318,12 +320,14 @@
       <footer>
         <div class="footer-container">© 2025 MySite Doing by Phenix Dev.</div>
       </footer>
-      <!-- Scripts for Typed.js (animated text) and custom script -->
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <!--scroll reveal-->
-      <script src="https://unpkg.com/scrollreveal"></script>
-      <!-- Custom script file -->
-      <script src="script/script.js"></script>
     </main>
+
+    <!-- Scripts for Typed.js (animated text) and custom script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom script file -->
+    <script src="script/script.js"></script>
+
   </body>
 </html>

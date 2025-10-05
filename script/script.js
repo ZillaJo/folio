@@ -1,6 +1,5 @@
 // Création of an instance Typed.js for animated text effect on the home page with the"typing" class
 var typed = new Typed(".typing", {
-  // Liste des textes à afficher de façon dynamique
   strings: [
     "Frontend Developer",
     "Blogger",
@@ -13,9 +12,6 @@ var typed = new Typed(".typing", {
   backDelay: 1000, // Pause avant de commencer à effacer (ms)
   loop: true, // Répète l'animation en boucle
 });
-/*=========== Toggle icon navbar ============*/
-
-/*=========== stickly navbar ============*/
 
 /*========= For pages animation========*/
 ScrollReveal({
@@ -30,5 +26,14 @@ ScrollReveal().reveal(
   ".home-img, .case-section, .recent-section, .testimonial-section, .intouch-section",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".hero-left h1, .hero-right", { origin: "left" });
+ScrollReveal().reveal(".hero-left h1, .hero-right, #menu-icon", { origin: "left" });
 ScrollReveal().reveal(" main p,.cases .badge, .parteners", { origin: "right" });
+
+// add menuHamburger
+
+const menuBtn = document.getElementById("menu-icon");
+const navLinks = document.querySelector("nav .nav-links");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});

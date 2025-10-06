@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -104,10 +105,10 @@ nav .nav-links {
   color: #0a7a06;
 }
 
- ul {
+ul {
   list-style: none;
 }
- ul li {
+ul li {
   margin: 5px 0;
 }
 
@@ -188,7 +189,7 @@ i {
   justify-content: end;
 }
 .hero .hero-right div {
-  height: 300px;
+  height: 400px;
   width: 300px;
   border-radius: 50%;
   overflow: hidden;
@@ -470,8 +471,6 @@ footer {
   color: #9c9c9c;
 }
 
-
-
 /* Responsiveness section */
 
 @media (min-width: 970px) {
@@ -547,17 +546,17 @@ footer {
 }
 
 @media (min-width: 922px) and (max-width: 969px) {
- /* Bouton menu hamburger */
-.nav-bar .menu-hamburger,
-#menu-icon {
-  position: absolute;
-  top: 20px;     /* distance du haut */
-  right: 30px;   /* distance du bord droit */
-  font-size: 2.5rem; /* taille de l’icône */
-  cursor: pointer;
-  display: block; /* visible en mobile */
-  z-index: 999;  /* toujours au-dessus */
-}
+  /* Bouton menu hamburger */
+  .nav-bar .menu-hamburger,
+  #menu-icon {
+    position: absolute;
+    top: 20px; /* distance du haut */
+    right: 30px; /* distance du bord droit */
+    font-size: 2.5rem; /* taille de l’icône */
+    cursor: pointer;
+    display: block; /* visible en mobile */
+    z-index: 999; /* toujours au-dessus */
+  }
   nav .nav-links {
     top: 0;
     left: 0;
@@ -650,17 +649,17 @@ footer {
 }
 
 @media (min-width: 811px) and (max-width: 921px) {
- /* Bouton menu hamburger */
-.nav-bar .menu-hamburger,
-#menu-icon {
-  position: absolute;
-  top: 20px;     /* distance du haut */
-  right: 30px;   /* distance du bord droit */
-  font-size: 2.5rem; /* taille de l’icône */
-  cursor: pointer;
-  display: block; /* visible en mobile */
-  z-index: 999;  /* toujours au-dessus */
-}
+  /* Bouton menu hamburger */
+  .nav-bar .menu-hamburger,
+  #menu-icon {
+    position: absolute;
+    top: 20px; /* distance du haut */
+    right: 30px; /* distance du bord droit */
+    font-size: 2.5rem; /* taille de l’icône */
+    cursor: pointer;
+    display: block; /* visible en mobile */
+    z-index: 999; /* toujours au-dessus */
+  }
   nav .nav-links {
     top: 0;
     left: 0;
@@ -756,17 +755,17 @@ footer {
 }
 
 @media (min-width: 701px) and (max-width: 810px) {
-    /* Bouton menu hamburger */
-.nav-bar .menu-hamburger,
-#menu-icon {
-  position: absolute;
-  top: 20px;     /* distance du haut */
-  right: 30px;   /* distance du bord droit */
-  font-size: 2.5rem; /* taille de l’icône */
-  cursor: pointer;
-  display: block; /* visible en mobile */
-  z-index: 999;  /* toujours au-dessus */
-}
+  /* Bouton menu hamburger */
+  .nav-bar .menu-hamburger,
+  #menu-icon {
+    position: absolute;
+    top: 20px; /* distance du haut */
+    right: 30px; /* distance du bord droit */
+    font-size: 2.5rem; /* taille de l’icône */
+    cursor: pointer;
+    display: block; /* visible en mobile */
+    z-index: 999; /* toujours au-dessus */
+  }
   nav .nav-links {
     top: 0;
     left: 0;
@@ -812,8 +811,8 @@ footer {
     gap: 5px;
   }
   .hero img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
@@ -911,16 +910,16 @@ footer {
 
 @media screen and (min-width: 451px) and (max-width: 700px) {
   /* Bouton menu hamburger */
-.nav-bar .menu-hamburger,
-#menu-icon {
-  position: absolute;
-  top: 20px;     /* distance du haut */
-  right: 30px;   /* distance du bord droit */
-  font-size: 2.5rem; /* taille de l’icône */
-  cursor: pointer;
-  display: block; /* visible en mobile */
-  z-index: 999;  /* toujours au-dessus */
-}
+  .nav-bar .menu-hamburger,
+  #menu-icon {
+    position: absolute;
+    top: 20px; /* distance du haut */
+    right: 30px; /* distance du bord droit */
+    font-size: 2.5rem; /* taille de l’icône */
+    cursor: pointer;
+    display: block; /* visible en mobile */
+    z-index: 999; /* toujours au-dessus */
+  }
   nav .nav-links {
     top: 0;
     left: 0;
@@ -1068,16 +1067,16 @@ footer {
 
 @media screen and (max-width: 450px) {
   /* Bouton menu hamburger */
-.nav-bar .menu-hamburger,
-#menu-icon {
-  position: absolute;
-  top: 20px;     /* distance du haut */
-  right: 30px;   /* distance du bord droit */
-  font-size: 2.5rem; /* taille de l’icône */
-  cursor: pointer;
-  display: block; /* visible en mobile */
-  z-index: 999;  /* toujours au-dessus */
-}
+  .nav-bar .menu-hamburger,
+  #menu-icon {
+    position: absolute;
+    top: 20px; /* distance du haut */
+    right: 30px; /* distance du bord droit */
+    font-size: 2.5rem; /* taille de l’icône */
+    cursor: pointer;
+    display: block; /* visible en mobile */
+    z-index: 999; /* toujours au-dessus */
+  }
   nav .nav-links {
     top: 0;
     left: 0;

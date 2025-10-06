@@ -1,8 +1,8 @@
 // Création of an instance Typed.js for animated text effect on the home page with the"typing" class
 var typed = new Typed(".typing", {
   strings: [
-    "Frontend Developer",
-    "Blogger",
+    "Full stack Developer",
+    "Telecommunications and Electronics Engineer",
     "Freelancer",
     "Youtuber",
     "Photographer",
@@ -26,7 +26,9 @@ ScrollReveal().reveal(
   ".home-img, .case-section, .recent-section, .testimonial-section, .intouch-section",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".hero-left h1, .hero-right, #menu-icon", { origin: "left" });
+ScrollReveal().reveal(".hero-left h1, .hero-right, #menu-icon", {
+  origin: "left",
+});
 ScrollReveal().reveal(" main p,.cases .badge, .parteners", { origin: "right" });
 
 // add menuHamburger
